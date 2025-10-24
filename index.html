@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BertsPuffs | Premium Vaping Experience</title>
+    <meta name="description" content="Discover premium vape devices, e-liquids, and accessories at BertsPuffs.">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMD5VpU6H2GNYHDH7hIeF4jK+d+K7+b9I/J/41f+aY/fE4fG9K1G9w/z1L/C+z1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <a href="#" class="logo">BertsPuffs</a>
+        
+        <nav class="desktop-nav">
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="cart-btn" class="cart-button transition-all" aria-label="Shopping Cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span id="cart-count" class="cart-counter hidden">0</span>
+            </button>
+
+            <div id="mini-cart-dropdown" class="mini-cart-dropdown hidden">
+                <h4 class="dropdown-title">Your Cart</h4>
+                <div id="cart-items-container" class="cart-items-container">
+                    <p class="empty-cart-message">Your cart is empty.</p>
+                </div>
+                <div class="cart-summary">
+                    <p>Total Items: <span id="total-items-summary">0</span></p>
+                    <a href="#" class="checkout-button">View Cart / Checkout</a>
+                </div>
+            </div>
+
+            </div>
+    </div>
+</header>
+    
+<main class="main-content">
+
+    <section id="vape-hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Elevate Your Vaping Experience.
+            </h1>
+            <p class="hero-tagline">
+                The ultimate destination for premium devices, artisan e-liquids, and expert guidance.
+            </p>
+            <a href="#products" class="cta-button">
+                Shop All Products
+            </a>
+        </div>
+        <div class="hero-image-container">
+            <img src="images/puff.png" alt="Premium Vape Device" class="hero-image">
+        </div>
+    </section>
+        
+    <section class="category-section">
+        <h2 class="section-title">Explore Our Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <span class="category-icon">📱</span>
+                <h3 class="category-title">Vape Devices</h3>
+                <p class="category-description">Mods, Pod Systems, and Starter Kits.</p>
+            </div>
+
+            <div class="category-card">
+                <span class="category-icon">💧</span>
+                <h3 class="category-title">E-Liquids and Pods</h3>
+                <p class="category-description">Salt Nic, Freebase, and Flavor Concentrates.</p>
+            </div>
+
+            <div class="category-card">
+                <span class="category-icon">🛠️</span>
+                <h3 class="category-title">Accessories</h3>
+                <p class="category-description">Coils, Batteries, Chargers, and Tools.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="product-section">
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="filter-controls">
+            <button data-filter="all" class="filter-button active">All</button>
+            <button data-filter="device" class="filter-button">Devices</button>
+            <button data-filter="eliquid" class="filter-button">E-Liquids</button>
+            <button data-filter="accessory" class="filter-button">Accessories</button>
+        </div>
+
+        <div id="product-grid" class="product-grid">
+
+            <div 
+                class="product-card" 
+                data-category="device"
+                data-name="Vape Kit Pro"
+                data-price="1200"
+                data-image-url="images/kitpro.png"
+            >
+                <img src="images/kitpro.png" alt="High-power Vape Kit Pro" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Vape Kit Pro</h3>
+                    <p class="product-details">High-power, sleek design.</p>
+                    <p class="product-price">1,200₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="eliquid"
+                data-name="Berry Blast E-Liquid"
+                data-price="400"
+                data-image-url="images/cherry berry.jpg"
+            >
+                <img src="images/cherry berry.jpg" alt="Berry Blast E-Juice 10ml" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Berry Blast E-Liquid</h3>
+                    <p class="product-details">Sweet mix of Cherry and Berries.</p>
+                    <p class="product-price">400₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="eliquid"
+                data-name="Pineapple Blast E-Liquid"
+                data-price="400"
+                data-image-url="images/pineapplemango.jpg"
+            >
+                <img src="images/pineapplemango.jpg" alt="Pineapple Mangot E-Juice 10ml" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Pineapple Blast E-Liquid</h3>
+                    <p class="product-details">Sweet mix of Pineapple and Mango.</p>
+                    <p class="product-price">400₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="eliquid"
+                data-name="S&K Blast E-Liquid"
+                data-price="400"
+                data-image-url="images/kiwi.jpg"
+            >
+                <img src="images/kiwi.jpg" alt="Strawberry Kiwi E-Juice 10ml" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">S&K Blast E-Liquid</h3>
+                    <p class="product-details">Sweet mix of Kiwi and Strawberry.</p>
+                    <p class="product-price">400₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="eliquid"
+                data-name="W&L Blast E-Liquid"
+                data-price="400"
+                data-image-url="images/Watermelonlemon.jpg"
+            >
+                <img src="images/Watermelonlemon.jpg" alt="Watermelon Lemon E-Juice 10ml" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">W&L Blast E-Liquid</h3>
+                    <p class="product-details">Sweet mix of Watermelon and Lemon.</p>
+                    <p class="product-price">400₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="eliquid"
+                data-name="BC Pod 8000 Puffs"
+                data-price="350"
+                data-image-url="images/blackcurrantx.png"
+            >
+                <img src="images/blackcurrantx.png" alt="Black Currant Pod 8000 Puffs " class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">BC Pod 8000 Puffs</h3>
+                    <p class="product-details">Black Wave.</p>
+                    <p class="product-price">350₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="eliquid"
+                data-name="LemonCola Pod 8000 Puffs"
+                data-price="350"
+                data-image-url="images/lemoncolax.png"
+            >
+                <img src="images/lemoncolax.png" alt="Lemon Cola Pod 8000 Puffs " class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">LemonCola Pod 8000 Puffs</h3>
+                    <p class="product-details">Sparkle Squeeze.</p>
+                    <p class="product-price">350₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="eliquid"
+                data-name="Lychee Pod 8000 Puffs"
+                data-price="350"
+                data-image-url="images/lycheex.png"
+            >
+                <img src="images/lycheex.png" alt="Lychee Pod 8000 Puffs " class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Lychee Pod 8000 Puffs</h3>
+                    <p class="product-details">Cheer Blast.</p>
+                    <p class="product-price">350₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="device"
+                data-name="Flava Oxbar (Pink Ice)"
+                data-price="650"
+                data-image-url="images/flavapink.jpg"
+            >
+                <img src="images/flavapink.jpg" alt="Flava" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Flava Oxbar</h3>
+                    <p class="product-details">Pink Ice.</p>
+                    <p class="product-price">650₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="device"
+                data-name="Flava Oxbar (Blush Ice)"
+                data-price="650"
+                data-image-url="images/BlushIceflava.jpg"
+            >
+                <img src="images/BlushIceflava.jpg" alt="Flava Blush Ice" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Flava Oxbar</h3>
+                    <p class="product-details">Blush Ice.</p>
+                    <p class="product-price">650₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="device"
+                data-name="Flava Oxbar (Pink Snow)"
+                data-price="650"
+                data-image-url="images/flavapinksnow.jpg"
+            >
+                <img src="images/flavapinksnow.jpg" alt="Flava Pink Snow" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Flava Oxbar</h3>
+                    <p class="product-details">Pink Snow.</p>
+                    <p class="product-price">650₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="device"
+                data-name="Flava Oxbar (Red Swirl)"
+                data-price="650"
+                data-image-url="images/redswirlflava.jpg"
+            >
+                <img src="images/redswirlflava.jpg" alt="Flava Red Swril" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Flava Oxbar</h3>
+                    <p class="product-details">Red Swirl.</p>
+                    <p class="product-price">650₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+
+            <div 
+                class="product-card" 
+                data-category="accessory"
+                data-name="Oxva Lace"
+                data-price="50"
+                data-image-url="images/lace.png"
+            >
+                <img src="images/lace.png" alt="LaceAcessory" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">Oxva Lace</h3>
+                    <p class="product-details">Lace accesory.</p>
+                    <p class="product-price">50₱</p>
+                    <button class="add-to-cart-button">Add to Cart</button>
+                </div>
+            </div>
+        </div>            
+        <div class="view-all-link">
+            <a href="#">
+                View All BertsPuffs Products
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="features-section">
+        <div class="feature-grid">
+            
+            <div class="feature-item">
+                <span class="feature-icon">✅</span>
+                <h3 class="feature-title">Unmatched Quality</h3>
+                <p class="feature-description">We source only tested and certified products for your safety and satisfaction.</p>
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">💡</span>
+                <h3 class="feature-title">Expert Guidance</h3>
+                <p class="feature-description">Our team is ready to provide personalized recommendations.</p>
+            </div>
+
+            <div class="feature-item">
+                <span class="feature-icon">🚀</span>
+                <h3 class="feature-title">Fast, Discreet Shipping</h3>
+                <p class="feature-description">Order before 2 PM and get same-day shipping on most items.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <h2 class="newsletter-title">Don't Miss Out!</h2>
+        <p class="newsletter-tagline">Subscribe to our newsletter for exclusive discounts and vaping tips.</p>
+        <form action="#" method="POST" class="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required class="newsletter-input">
+            <button type="submit" class="newsletter-button">
+                Subscribe Now
+            </button>
+        </form>
+        <p class="privacy-note">We respect your privacy. Unsubscribe anytime.</p>
+    </section>
+
+</main>
+
+<footer id="contact" class="main-footer">
+    <div class="footer-grid">
+        
+        <div class="footer-branding">
+            <h3 class="logo">BertsPuffs</h3>
+            <p>© 2024 BertsPuffs Inc. All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+
+<div class="footer-connect">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/albertjohn.berzabal">Facebook Icon</a>
+                    <a href="#">Twitter Icon</a>
+                </div>
+            </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
